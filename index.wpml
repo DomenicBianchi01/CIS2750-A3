@@ -1,0 +1,3 @@
+.h(size=2,text="Login").t(text="Enter your username to begin or click on the 'Add/Remove Author' button to create a user.").d()
+.i(action="streamSelection.php", text="Username:", name="userID", value="").d()
+.b(name="Add/Remove Author",link="addauthor.php")

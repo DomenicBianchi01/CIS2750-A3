@@ -1,0 +1,3 @@
+.h(text="Add or Remove Author").d()
+.t(text="To remove or add an author to multiple streams, separate each stream name with a comma.<br>For example: stream1, stream2, stream3<br>You can only add one user at a time").d()
+.u(action="index.php", radioName="authorMode", radio1="Add Author", radio2="Remove Author", text="Username", name="userID2", value="", text="List of streams", name="streamList", value="")

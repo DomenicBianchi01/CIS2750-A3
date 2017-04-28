@@ -1,0 +1,4 @@
+.h(size=2,text="Stream Selection").d()
+.b(name="Change Author",link="index.php")
+.t(text="Select a stream to view:")
+.y(exe="getStreams.py")
