@@ -8,25 +8,25 @@ To compile the programs required to run the web pages, execute the following com
 
 make
 
-This command will compile A1 (converter.c and parseFile2.c) and run the program to convert a file named post.cc. Please note that the file must be named post.cc, otherwise the makefile will not be able to the link the correct .c file to the other programs. Next, an object file for the stream library will be created. Then, the post and addauthor programs from A2 will be compiled where the library will then be linked. Finally, permissions for all python scripts included in the submission will be updated.
+This command will compile A1 (`converter.c` and `parseFile2.c`) and run the program to convert a file named `post.cc`. Please note that the file must be named post.cc, otherwise the makefile will not be able to the link the `correct .c` file to the other programs. Next, an object file for the stream library will be created. Then, the post and addauthor programs from A2 will be compiled where the library will then be linked. Finally, permissions for all python scripts included in the submission will be updated.
 
 Also, a "messages" and a local "bin" directory will be created if they do not already exist in the current directory
 
-The addauthor, post, converter, and a3 executables are all designed to be run by other programs automatically, however you can still run them in the command line by the following the instructions below, however, for all programs other than ./a3 and ./converter, it is assumed that all command line arguments will be correct when running these programs:
+The addauthor, post, converter, and a3 executables are all designed to be run by other programs automatically, however you can still run them in the command line by the following the instructions below, however, for all programs other than `./a3` and `./converter`, it is assumed that all command line arguments will be correct when running these programs:
 
-./converter `filename`
+`./converter filename`
 
 where `filename` is the .cc file. Output is the converted .c file
 
-./addauthor `flag` `username` `streamname`
+`./addauthor flag username streamname`
 
 where `username` is the user to be added to the stream, `streamname` is the name of the stream, and `flag` is -r to remove the user or empty to add the user (however, the "" must still be included if considered to be "empty")
 
-./post `username` `streamname` `postcontent`
+`./post username streamname postcontent`
 
 where `username` is the user to be added to the stream,`streamname` is the name of the stream, and `postcontent` is the message to be posted.
 
-./a3 `filename`
+`./a3 filename`
 
 where `filename` is the .wpml file (configuration file)
 
