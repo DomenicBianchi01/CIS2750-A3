@@ -126,15 +126,15 @@ where "filename" is the file name of the action for the form, `radioName` is the
 *****************
 Known Limitations
 *****************
--Because the 4 programs mentioned above (and all python programs included in this submission) are not designed to be manually called by a user (rather the webpage and PHP creates a command line that will call the program) there is no error checking for proper number of command line arguments and format (with the exception of ./a3 and ./converter). It is assumed the correct number, format, and values of all command line arguments will always be provided. For example, if you attempt to run ./converter without a file name, the program will segmentation fault.
+-Because the 4 programs mentioned above (and all python programs included in this submission) are not designed to be manually called by a user (rather the webpage and PHP creates a command line that will call the program) there is no error checking for proper number of command line arguments and format (with the exception of `./a3` and `./converter`). It is assumed the correct number, format, and values of all command line arguments will always be provided. For example, if you attempt to run `./converter` without a file name, the program will segmentation fault.
 
 -This assignment is not compatible with Internet Explorer or Microsoft Edge. I have only tested the assignment successfully on Google Chrome and Safari. Other browsers may NOT be compatible.
 
 -In order for the elements on the webpage to display correctly, make sure the web browser is wide enough where all the top row buttons can fit on one "line" (when on the viewing stream web page)
 
--A stream cannot be named "all"
+-A stream cannot be named `all`
 
--A stream cannot be named "-r"
+-A stream cannot be named `-r`
 
 -A stream name cannot be longer than 256 characters
 
@@ -144,10 +144,14 @@ Known Limitations
 
 -Given a configuration file, no tag can be spread over multiple lines. Each tag must be present on a single line. Multiple tags can be on the same line as long as they don't exceed the 500 character limit.
 
--Give a tag, no string can include quotation marks. For example this tag is valid:
+-Give a tag, no string can include quotation marks. For example this tag is valid.
+
 	.t(text="Enter your username:")
+
 However, the following is not allowed:
+
 	.t(text="Enter "your" username:")
+
 Even if you add escape characters, quotations inside quotations are still not allowed. Single quotes are OK.
 
 -When running addauthor and inputing a list of stream names for "List of streams:", the number of characters you input cannot exceed 256 characters.
@@ -174,11 +178,12 @@ Even if you add escape characters, quotations inside quotations are still not al
 
 -Regarding the .h tag, sizes can be less than 1 and greater than 6. In the event the number is negative, the absolute value is taken.
 
--Regarding the .e tag, only one "exe" parameter can be included. Multiple "exe" parameters will result in no executables being run. Also, the tag cannot include any "garbage" tags and/or text. In other words, the .e flag must follow the specification exactly with no extra text/characters.
+-Regarding the `.e` tag, only one `exe` parameter can be included. Multiple `exe` parameters will result in no executables being run. Also, the tag cannot include any "garbage" tags and/or text. In other words, the `.e` flag must follow the specification exactly with no extra text/characters.
 
--For text tag (.t), if the file name provided in the "file" parameter does not exist, the default text will be displayed
+-For text tag (`.t`), if the file name provided in the `file` parameter does not exist, the default text will be displayed
 
--For the radio button tag (.r). When "garbage" tags are included, an extra garbage tag/text of "value" will be created. This only occurs when there is invalid text (excluding actual parameter garbage values). For example:
+-For the radio button tag (`.r`). When "garbage" tags are included, an extra garbage tag/text of `value` will be created. This only occurs when there is invalid text (excluding actual parameter garbage values). For example:
+	
 	.r(action="t1.php",name="m1",align="left",value="b1",value="b2") <-- this is OK
 	.r(dd,action="t1.php",name="m1",align="left",value="b1",value="b2") <-- will produce an extra tag/text containing the word "value"
 	.r(action="t1.php",name="m1",align="left",value="b1",dd,value="b2") <-- will produce an extra tag/text containing the word "value"
