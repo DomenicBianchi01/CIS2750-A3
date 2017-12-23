@@ -98,6 +98,9 @@ where `file` is the relative path of the file that contains text to be displayed
 ***********
 Custom Tags
 ***********
+
+We were also allowed to specify our own tags to expand on the functionality of the tags provided to us (as listed above).
+
 a - adds a form linked to a text area (for making a post)
 	
 	.a(action="filename",name="...",value="...",size=<width>x<height>)
