@@ -34,19 +34,26 @@ where `filename` is the .wpml file (configuration file)
 Custom Tags
 ***********
 a - adds a form linked to a text area (for making a post)
-	.a(action="<filename>",name="...",value="...",size=<width>x<height>)
-        where <filename> is the file name of the action for the form, "name" is the ID to link the form and text are, "value" is the default text displaying in the text area, and "size" is the dimensions of the text area.
+	
+	.a(action="filename",name="...",value="...",size=<width>x<height>)
+        
+where `filename` is the file name of the action for the form, `name` is the ID to link the form and text are, `value` is the default text displaying in the text area, and "size" is the dimensions of the text area.
 
-k - adds a break tag (<br>)
+k - adds a break tag (`<br>`)
+	
 	.k()
 
-y - delay running the executable until all other elements of tags in the config file have been sent to the browser. The executable in the .y tag is run as the very last action when generating HTML. Should NOT be used in replacement of the .e tag and should only be used to run programs written by me. It is assumed that <filename> includes the relative path of the file to be run.
-	.y(exe="<filename>")
-        where "<filename>" is the file to be executed.
+y - delay running the executable until all other elements of tags in the config file have been sent to the browser. The executable in the .y tag is run as the very last action when generating HTML. Should NOT be used in replacement of the `.e` tag and should only be used to run programs written by me. It is assumed that `filename` includes the relative path of the file to be run.
+	
+	.y(exe="filename"
+	
+where `filename` is the file to be executed.
 
 u - adds two radio buttons and two input fields within one form (for addauthor)
-	.u(action="<filename>", radioName="...", radio1="...", radio2="...", text="...", name="...", value="...", text="...", name="...", value="...")
-        where "<filename>" is the file name of the action for the form, "radioName" is the name of the two radio buttons, "radio1/radio2" are the values of each radio button. The next six parameters follow the same format of the .i tag. Text, name, and value must be grouped together and listed in order.
+	
+	.u(action="filename", radioName="...", radio1="...", radio2="...", text="...", name="...", value="...", text="...", name="...", value="...")
+       
+where "filename" is the file name of the action for the form, `radioName` is the name of the two radio buttons, `radio1/radio2` are the values of each radio button. The next six parameters follow the same format of the `.i` tag. Text, name, and value must be grouped together and listed in order.
 
 *****************
 Known Limitations
