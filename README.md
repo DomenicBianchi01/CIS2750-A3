@@ -45,7 +45,7 @@ k - adds a break tag (`<br>`)
 
 y - delay running the executable until all other elements of tags in the config file have been sent to the browser. The executable in the .y tag is run as the very last action when generating HTML. Should NOT be used in replacement of the `.e` tag and should only be used to run programs written by me. It is assumed that `filename` includes the relative path of the file to be run.
 	
-	.y(exe="filename"
+	.y(exe="filename")
 	
 where `filename` is the file to be executed.
 
