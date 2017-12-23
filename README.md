@@ -30,6 +30,69 @@ where `username` is the user to be added to the stream,`streamname` is the name 
 
 where `filename` is the .wpml file (configuration file)
 
+*************
+Provided Tags
+*************
+
+The tags listed below are tags that were provided in the assignment specification,
+
+b - Clickable button
+
+	.b(name="...",link="...")
+	
+where `name` is the text for the button and `link` is which page should be loaded when the button is clicked
+
+d - Horizontal Line
+
+	.d()
+	
+e - Executable
+
+	.e(exe="...")
+	
+where `exe` is the program to be executed.
+
+h - Heading
+
+	.a(size="...",text="..."
+	
+where `size` is an integer between 1 and 6 and `text` is the text for the header
+
+
+i - Input (Creates a label, input field, and submit button)
+
+	.i(action="...",text="...",name="...",value="..."
+	
+where `action` is the file that should be executrd when the submit button is pressed, `text` is the text for the label before the input field, `name` is a unique identifier for the text field, and `value` is the default value of the input field.
+
+l - Link to webpage
+
+	.l(text="...",link="...")
+
+where `text` is the label for the button and `link` is the URL
+
+p - Picture
+
+	.a(image="...",size=<width>x<height>)
+	
+where `image` is the name of the image to be displayed and `size` is the size of the picture
+
+r - Radio Buttons(s)
+
+	.r(action="...",name="...",value="...")
+	
+where `action` is the file to be executed when the submit button is clicked, `name` is the unique identifier for set of buttons, and `value` is the text for the button. Mutliple value parameters are allowed:
+
+	.r(action="radio.php",name="colour",value="red",value="green",value="blue")
+	
+t - Text
+
+	.t(text="...")
+	.t(file="...")
+
+where `text` is raw text to be displayed
+where `file` is the relative path of the file that contains text to be displayed
+
 ***********
 Custom Tags
 ***********
@@ -37,7 +100,7 @@ a - adds a form linked to a text area (for making a post)
 	
 	.a(action="filename",name="...",value="...",size=<width>x<height>)
         
-where `filename` is the file name of the action for the form, `name` is the ID to link the form and text are, `value` is the default text displaying in the text area, and "size" is the dimensions of the text area.
+where `filename` is the file name of the action for the form, `name` is the ID to link the form and text are, `value` is the default text displaying in the text area, and `size` is the dimensions of the text area.
 
 k - adds a break tag (`<br>`)
 	
