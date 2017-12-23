@@ -14,23 +14,21 @@ Also, a "messages" and a local "bin" directory will be created if they do not al
 
 The addauthor, post, converter, and a3 executables are all designed to be run by other programs automatically, however you can still run them in the command line by the following the instructions below, however, for all programs other than ./a3 and ./converter, it is assumed that all command line arguments will be correct when running these programs:
 
-./converter <filename>
-where <filename> is the .cc file. Output is the converted .c file
+./converter `filename`
 
-./addauthor "<flag>" "<username>" "<streamname>"
-where <username> is the user to be added to the stream, <streamname> is the name of the stream, and <flag> is -r to remove the user or empty to add the user (however, the "" must still be included if considered to be "empty")
+where `filename` is the .cc file. Output is the converted .c file
 
-./post "<username>" "<streamname>" "<postContent>"
-where <username> is the user to be added to the stream, <streamname> is the name of the stream. and <postContent> is the message to be posted.
+./addauthor `flag` `username` `streamname`
 
-./a3 <filename>
-where <filename> is the .wpml file (configuration file)
+where `username` is the user to be added to the stream, `streamname` is the name of the stream, and `flag` is -r to remove the user or empty to add the user (however, the "" must still be included if considered to be "empty")
 
-***************************
-Running the program/webpage
-***************************
+./post `username` `streamname` `postcontent`
 
-Depending where on the server you have inserted the submission files, go the URL that can find index.php. For example, if I put my submission files at /srv/www/dbianchi, the URL I would go to would be: https://2750web.socs.uoguelph.ca/dbianchi/
+where `username` is the user to be added to the stream,`streamname` is the name of the stream, and `postcontent` is the message to be posted.
+
+./a3 `filename`
+
+where `filename` is the .wpml file (configuration file)
 
 ***********
 Custom Tags
