@@ -1,6 +1,6 @@
 # CIS2750-A3
 
-The focus of the third assingment was to take the Terminal UI from the second assignment and convert it to work as a webpage. As part of the requirements for the assignment, the webpage's UI elements must be created from the program as it runs. To do this we were given a set of "tags" that would need to be placed ina `.wpml` file. Whenever the program needed to load a webpage, the corresponding `.wpml` file would need to be parsed to determine the interface for that webpage.
+The focus of the third assingment was to take the Terminal UI from the second assignment and convert it to work as a webpage. As part of the requirements for the assignment, the webpage's UI elements must be created from the program as it runs. To do this we were given a set of "tags" that would need to be placed in a `.wpml` file. Whenever the program needed to load a webpage, the corresponding `.wpml` file would need to be parsed to determine the interface for that webpage.
 
 ************
 Compilation
